@@ -16,8 +16,8 @@ public class ArrayFunHouseTwo
 	public static boolean goingUp(int[] numArray)
 	{
 		
-		for(int i: numArray)
-			if(i >= numArray[0])
+		for(int i = 0; i < i + 1; i++)
+			if(i <= numArray.length)
 				return true;
 			return false;
 
@@ -29,10 +29,10 @@ public class ArrayFunHouseTwo
 	//[31, 20, 10, 15, 9] returns false
 	public static boolean goingDown(int[] numArray)
 	{
-		for(int i: numArray)
-		if(i <= numArray[0])
+		for(int i = 0; i > i + 1; i++)
+			if(i <= numArray.length)
+				return true;
 			return false;
-		return true;
 		
 	}
 
